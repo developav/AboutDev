@@ -1,0 +1,38 @@
+.tech {
+    padding-top: 100px;
+    &__heading {
+        font-size: 48px;
+        text-align: center;
+        margin-bottom: 50px;
+    }
+    &__group {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        &-daily {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            &-text {
+                color:  rgba(255, 255, 255, 0.5);
+                font-size: 24px;
+                margin-bottom: 20px;
+            }
+            &-list {
+                display: flex;
+                flex-direction: row;
+            }
+            &-item {
+                &:not(:last-child) {
+                    margin-right: 30px;
+                }
+            }
+            &-svg {
+                width: 84px;
+                height: 84px;
+            }
+        }
+    }
+}
