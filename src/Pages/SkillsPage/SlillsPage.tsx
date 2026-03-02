@@ -1,42 +1,76 @@
-import "./SkillsPage.scss"
+import { motion } from "framer-motion";
+import { 
+  ReactIcon, 
+  TypeScriptIcon, 
+  HTMLIcon, 
+  CSSIcon, 
+  SassIcon, 
+  GitIcon, 
+  GitHubIcon, 
+  VueIcon 
+} from "../../icons/TechIcons";
+import "./SkillsPage.scss";
+
+const pageVariants = {
+  initial: { opacity: 0, y: 20 },
+  animate: { opacity: 1, y: 0 },
+  exit: { opacity: 0, y: -20 },
+};
+
+const pageTransition = {
+  duration: 0.3,
+  ease: "easeInOut" as const,
+};
+
+interface Tech {
+  id: string;
+  name: string;
+  icon: React.ComponentType;
+}
+
+const TECHNOLOGIES: Tech[] = [
+  { id: "react", name: "React", icon: ReactIcon },
+  { id: "typescript", name: "TypeScript", icon: TypeScriptIcon },
+  { id: "html", name: "HTML5", icon: HTMLIcon },
+  { id: "css", name: "CSS3", icon: CSSIcon },
+  { id: "sass", name: "Sass", icon: SassIcon },
+  { id: "git", name: "Git", icon: GitIcon },
+  { id: "github", name: "GitHub", icon: GitHubIcon },
+  { id: "vue", name: "Vue.js", icon: VueIcon },
+];
+
 export default function SkillsPage() {
-    return (
-        <section className="tech">
-			<div className="container">
-				<h2 className="tech__heading">Технологии и навыки</h2>
-				<div className="tech__group">
-					<div className="tech__group-daily">
-						<p className="tech__group-daily-text">Технологии, которые я использую</p>
-						<ul className="tech__group-daily-list">
-							<li className="tech__group-daily-item">
-								<svg className="tech__group-daily-svg"><use xlink:href="#HTML5"></use></svg>
-							</li>
-							<li className="tech__group-daily-item">
-								<svg className="tech__group-daily-svg"><use xlink:href="#css3"></use></svg>
-							</li>
-							<li className="tech__group-daily-item">
-								<svg className="tech__group-daily-svg"><use xlink:href="#Javascript"></use></svg>
-							</li>
-							<li className="tech__group-daily-item">
-								<svg className="tech__group-daily-svg"><use xlink:href="#sass"></use></svg>
-							</li>
-							<li className="tech__group-daily-item">
-								<svg className="tech__group-daily-svg"><use xlink:href="#gulp"></use></svg>
-							</li>
-							<li className="tech__group-daily-item">
-								<svg className="tech__group-daily-svg"><use xlink:href="#Githubb"></use></svg>
-							</li>
-							<li className="tech__group-daily-item">
-								<svg className="tech__group-daily-svg"><use xlink:href="#Nodejs"></use></svg>
-							</li>
-							<li className="tech__group-daily-item">
-								<svg className="tech__group-daily-svg"><use xlink:href="#Vue"></use></svg>
-							</li>
-						</ul>
-					</div>
-				</div>
-				
-			</div>
-		</section>
-    )
+  return (
+    <motion.div
+      variants={pageVariants}
+      initial="initial"
+      animate="animate"
+      exit="exit"
+      transition={pageTransition}
+    >
+      <section className="tech">
+        <div className="container">
+          <h2 className="tech__heading">Technologies & Skills</h2>
+          <div className="tech__group">
+            <div className="tech__group-daily">
+              <p className="tech__group-daily-text">
+                Technologies I use daily
+              </p>
+              <ul className="tech__group-daily-list">
+                {TECHNOLOGIES.map((tech) => {
+                  const IconComponent = tech.icon;
+                  return (
+                    <li key={tech.id} className="tech__group-daily-item">
+                      <IconComponent />
+                      <span className="tech__name">{tech.name}</span>
+                    </li>
+                  );
+                })}
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+    </motion.div>
+  );
 }

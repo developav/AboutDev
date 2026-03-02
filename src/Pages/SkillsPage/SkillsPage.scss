@@ -1,9 +1,10 @@
 .tech {
-    padding-top: 100px;
+    padding-top: 50px;
     &__heading {
         font-size: 48px;
         text-align: center;
         margin-bottom: 50px;
+        color: #333;
     }
     &__group {
         display: flex;
@@ -16,7 +17,7 @@
             justify-content: center;
             align-items: center;
             &-text {
-                color:  rgba(255, 255, 255, 0.5);
+                color: #333;
                 font-size: 24px;
                 margin-bottom: 20px;
             }
@@ -25,14 +26,41 @@
                 flex-direction: row;
             }
             &-item {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 15px;
                 &:not(:last-child) {
                     margin-right: 30px;
                 }
-            }
-            &-svg {
-                width: 84px;
-                height: 84px;
+                & svg {
+                    width: 84px;
+                    height: 84px;
+                }
             }
         }
+    }
+}
+@media (max-width: 768px) {
+    .tech {
+    padding-top: 100px;
+    &__group {   
+        &-daily {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            &-list {
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+            }
+             &-item {
+                &:not(:last-child) {
+                    margin-right: 0px;
+                }
+        }
+    }
+}
     }
 }

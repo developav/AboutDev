@@ -1,162 +1,234 @@
 import { useState } from 'react';
-import "./AboutMe.scss"
-export default function AboutMe () {
-    const [activeTab, setActiveTab] = useState(1);
-    return  (
-        <section className="about">
-			<div className="container">
-				<div className="about__block">
-					<img className="about__block-image" src="images/pavlov1.jpg" alt=""/>
-					<div className="about__descr">
-						<p className="about__descr-text">🧐 About me</p>
-						<h2 className="about__descr-head">Павлов Дмитрий Евгеньевич</h2>
-						<p className="about__descr-text-forme">👋 Меня зовут Павлов Дмитрий. Приятно познакомится</p>
-						<p className="about__descr-text-forme">👨‍💻 Более 3-х лет разрабатываю интерфейсы</p>
-						<p className="about__descr-text-forme">🎓 Выпускник Тамбовского Государственного Технического Университета по специальности "Информационные системы и технологии"</p>
-						<p className="about__descr-text-forme">💡 Интересует Front-end разработка на JS, Vue, React</p>
-						<p className="about__descr-text-forme">🚀 Пытаюсь быть немного лучше, чем вчера.</p>
-					</div>
-				</div>
-				<div className="about__project">
-					<h2 className="about__project-heading">Работы и проекты</h2>
-                    <div className="about__project-list">
-                        <button className="about__project-button" onClick={() => setActiveTab(1)}>JavaScript</button>
-                        <button className="about__project-button" onClick={() => setActiveTab(2)}>Vue</button>
-                        <button className="about__project-button" onClick={() => setActiveTab(3)}>HTML</button>
-                        <button className="about__project-button" onClick={() => setActiveTab(4)}>Коммерция</button>
-                    </div>
-				</div>
-                {activeTab === 1 && (
-                    <div className="about__project-tabs-container about__project-tabs-container-active">
-                        <article className="about__project-card">
-                            <h3 className="about__project-card-heading">Playing-pairs</h3>
-                            <p className="about__project-card-text">Игра в пары, вводим количество карточек и находим одинаковые.</p>
-                            <div className="about__project-card-group">
-                                <span className="about__project-card-lang">HTML</span>
-                                <span className="about__project-card-lang">JavaScript</span>
-                            </div>
-                            <a href="https://developav.github.io/playing-pairs/" className="about__project-card-links">
-                                <img className="about__project-card-img" src="images/playpars.jpg" alt=""/>
-                            </a>
-                        </article>
-                        <article className="about__project-card">
-                            <h3 className="about__project-card-heading">Список студентов</h3>
-                            <p className="about__project-card-text">Список студентов с добавлением в local storage. Фильтрация по году, ФИО, дате рождения, годам обучения. Живой поиск по году, ФИО, дате рождения, годамобучения</p>
-                            <div className="about__project-card-group">
-                                <span className="about__project-card-lang">HTML</span>
-                                <span className="about__project-card-lang">JavaScript</span>
-                            </div>
-                            <a href="https://developav.github.io/studentList/" className="about__project-card-links">
-                                <img className="about__project-card-img" src="images/stud.jpg" alt=""/>
-                            </a>
-                        </article>
-                        <article className="about__project-card">
-                            <h3 className="about__project-card-heading">To do list</h3>
-                            <p className="about__project-card-text">To do list с хранением данных в local storage</p>
-                            <div className="about__project-card-group">
-                                <span className="about__project-card-lang">HTML</span>
-                                <span className="about__project-card-lang">JavaScript</span>
-                            </div>
-                            <a href="https://developav.github.io/doList/index.html" className="about__project-card-links">
-                                <img className="about__project-card-img" src="images/todo.jpg" alt=""/>
-                            </a>
-                        </article>
-                        <article className="about__project-card">
-                            <h3 className="about__project-card-heading">Clients app</h3>
-                            <p className="about__project-card-text">Clients app список клиентов</p>
-                            <div className="about__project-card-group">
-                                <span className="about__project-card-lang">HTML</span>
-                                <span className="about__project-card-lang">JavaScript</span>
-                            </div>
-                            <a href="#" className="about__project-card-links about__develop">
-                                <img className="about__project-card-img " src="images/opps.jpg" alt=""/>
-                                <div className="about__dev-opas">В разработке</div>
-                            </a>
-                        </article>
-                    </div>
-)}
-                    {activeTab === 2 && (
-                                    <div className="about__project-tabs-container">
-                                        <article className="about__project-card">
-                                            <h3 className="about__project-card-heading">Интернет-магазин</h3>
-                                            <p className="about__project-card-text">Интернет-магазин на Vue JS. Получает информацию о товарах по API. Использует store и vue router. Собран с помощью Webpack</p>
-                                            <div className="about__project-card-group">
-                                                <span className="about__project-card-lang">Vue JS</span>
-                                                <span className="about__project-card-lang">HTML</span>
-                                            </div>
-                                            <a href="https://developav.github.io/vue-shop/#/" className="about__project-card-links">
-                                                <img className="about__project-card-img" src="images/vueshop.jpg" alt=""/>
-                                            </a>
-                                        </article>
-                                    </div>
-                    )}		
-				 {activeTab === 3 && (
-                <div className="about__project-tabs-container">
-					<article className="about__project-card">
-						<h3 className="about__project-card-heading">Landing</h3>
-						<p className="about__project-card-text">Landing-page. Кастомный select</p>
-						<div className="about__project-card-group">
-							<span className="about__project-card-lang">HTML</span>
-							<span className="about__project-card-lang">CSS</span>
-						</div>
-						<a href="https://developav.github.io/ccs/" className="about__project-card-links">
-							<img className="about__project-card-img" src="" alt=""/>
-						</a>
-					</article>
-					<article className="about__project-card">
-						<h3 className="about__project-card-heading">Страница интернет магазина</h3>
-						<p className="about__project-card-text">Страница интернет магазина</p>
-						<div className="about__project-card-group">
-							<span className="about__project-card-lang">HTML</span>
-							<span className="about__project-card-lang">CSS</span>
-						</div>
-						<a href="https://developav.github.io/shop/" className="about__project-card-links">
-							<img className="about__project-card-img" src="" alt=""/>
-						</a>
-					</article>
-					<article className="about__project-card">
-						<h3 className="about__project-card-heading">Лендинг продажи шлепок</h3>
-						<p className="about__project-card-text">Лендинг продажи шлепок</p>
-						<div className="about__project-card-group">
-							<span className="about__project-card-lang">HTML</span>
-							<span className="about__project-card-lang">CSS</span>
-						</div>
-						<a href="https://developav.github.io/test-task/" className="about__project-card-links">
-							<img className="about__project-card-img" src="" alt=""/>
-						</a>
-					</article>
-					<article className="about__project-card">
-						<h3 className="about__project-card-heading">Страница карьера</h3>
-						<p className="about__project-card-text">Страница карьера</p>
-						<div className="about__project-card-group">
-							<span className="about__project-card-lang">HTML</span>
-							<span className="about__project-card-lang">SCSS</span>
-						</div>
-						<a href="https://developav.github.io/articul/" className="about__project-card-links">
-							<img className="about__project-card-img" src="" alt=""/>
-						</a>
-					</article>
-				</div>
-                 )}
-				 {activeTab === 4 && (
-                <div className="about__project-tabs-container">
-					<article className="about__project-card">
-						<h3 className="about__project-card-heading">ProspectSchool</h3>
-						<p className="about__project-card-text">Одностраничник языковой школы</p>
-						<div className="about__project-card-group">
-							<span className="about__project-card-lang">HTML</span>
-							<span className="about__project-card-lang">CSS</span>
-							<span className="about__project-card-lang">JS</span>
-						</div>
-						<a href="https://prospectschool.ru/" className="about__project-card-links">
-							<img className="about__project-card-img" src="" alt=""/>
-						</a>
-					</article>
-				</div>
-                 )}
-				
-				<a href="https://github.com/developav" className="about__project-link-git">Посмотреть больше проектов</a>
-			</div>
-		</section>
-    )
+import { motion } from "framer-motion";
+import { projects, professionalProjects, type Project } from '../../data/projects';
+import "./AboutMe.scss";
+
+const pageVariants = {
+  initial: { opacity: 0, y: 20 },
+  animate: { opacity: 1, y: 0 },
+  exit: { opacity: 0, y: -20 },
+};
+
+const pageTransition = {
+  duration: 0.3,
+  ease: "easeInOut",
+}as const;
+
+type TabType = 'all' | 'react' | 'javascript' | 'professional';
+
+export default function AboutMe() {
+  const [activeTab, setActiveTab] = useState<TabType>('all');
+
+  const getFilteredProjects = (): Project[] => {
+    if (activeTab === 'all') {
+      return [...projects, ...professionalProjects];
+    }
+    if (activeTab === 'professional') {
+      return professionalProjects;
+    }
+    return projects.filter(p => p.category === activeTab);
+  };
+
+  const filteredProjects = getFilteredProjects();
+
+  return (
+    <motion.div
+      variants={pageVariants}
+      initial="initial"
+      animate="animate"
+      exit="exit"
+      transition={pageTransition}
+    >
+      <section className="about">
+        <div className="container">
+          {/* About Section */}
+          <div className="about__block">
+            <div className="about__image-wrapper">
+              <img 
+                className="about__block-image" 
+                src="/pav2.webp" 
+                alt="Dmitrii Pavlov - Frontend Developer"
+                aria-label='Photo Dmitrii Pavlov - Frontend Developer'
+              />
+            </div>
+            
+            <div className="about__descr">
+              <p className="about__descr-label">About Me</p>
+              <h1 className="about__descr-head">Dmitrii Pavlov</h1>
+              <h2 className="about__descr-subhead">Frontend Developer</h2>
+              
+              <div className="about__descr-content">
+                <p className="about__descr-text">
+                  Frontend developer with 3+ years of experience building responsive, 
+                  user-focused web applications. Currently contributing to financial sector 
+                  projects at Moscow Exchange while seeking opportunities with European 
+                  product companies.
+                </p>
+                
+                <div className="about__highlights">
+                  <div className="about__highlight-item">
+                    <span className="about__highlight-icon">💼</span>
+                    <span className="about__highlight-text">
+                      Specialized in React, TypeScript, and modern frontend tooling
+                    </span>
+                  </div>
+                  
+                  <div className="about__highlight-item">
+                    <span className="about__highlight-icon">📈</span>
+                    <span className="about__highlight-text">
+                      Proven track record of improving conversion rates (1.7% → 3%)
+                    </span>
+                  </div>
+                  
+                  <div className="about__highlight-item">
+                    <span className="about__highlight-icon">🎓</span>
+                    <span className="about__highlight-text">
+                      Bachelor's in Information Systems & Technologies
+                    </span>
+                  </div>
+                  
+                  <div className="about__highlight-item">
+                    <span className="about__highlight-icon">🌍</span>
+                    <span className="about__highlight-text">
+                      Open to relocation in Europe | Remote work available
+                    </span>
+                  </div>
+                </div>
+                
+                <p className="about__descr-text">
+                  Passionate about creating accessible, performant interfaces that deliver 
+                  measurable business impact. Focused on continuous improvement and staying 
+                  current with frontend innovations.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          {/* Projects Section */}
+          <div className="about__project">
+            <h2 className="about__project-heading">Featured Projects</h2>
+            <p className="about__project-subheading">
+              A selection of my recent work showcasing different technologies and approaches
+            </p>
+            
+            <div className="about__project-list">
+              <button 
+                className={`about__project-button ${activeTab === 'all' ? 'active' : ''}`}
+                onClick={() => setActiveTab('all')}
+              >
+                All Projects
+              </button>
+              <button 
+                className={`about__project-button ${activeTab === 'react' ? 'active' : ''}`}
+                onClick={() => setActiveTab('react')}
+              >
+                React
+              </button>
+              <button 
+                className={`about__project-button ${activeTab === 'javascript' ? 'active' : ''}`}
+                onClick={() => setActiveTab('javascript')}
+              >
+                JavaScript
+              </button>
+              <button 
+                className={`about__project-button ${activeTab === 'professional' ? 'active' : ''}`}
+                onClick={() => setActiveTab('professional')}
+              >
+                Professional
+              </button>
+            </div>
+          </div>
+
+          {/* Project Cards */}
+          <motion.div 
+            className="about__project-tabs-container"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 0.3 }}
+            key={activeTab}
+          >
+            {filteredProjects.map((project) => (
+              <motion.article 
+                key={project.id}
+                className="about__project-card"
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.3, delay: project.id * 0.1 }}
+              >
+                <div className="about__project-card-header">
+                  <h3 className="about__project-card-heading">{project.title}</h3>
+                  <p className="about__project-card-subtitle">{project.description}</p>
+                </div>
+                
+                <p className="about__project-card-text">{project.fullDescription}</p>
+                
+                <div className="about__project-card-group">
+                  {project.technologies.map((tech) => (
+                    <span key={tech} className="about__project-card-lang">
+                      {tech}
+                    </span>
+                  ))}
+                </div>
+
+                {project.highlights && (
+                  <ul className="about__project-card-highlights">
+                    {project.highlights.slice(0, 3).map((highlight, index) => (
+                      <li key={index}>{highlight}</li>
+                    ))}
+                  </ul>
+                )}
+                
+                <div className="about__project-card-links-wrapper">
+                  {project.liveUrl && (
+                    <a 
+                      href={project.liveUrl} 
+                      className="about__project-card-link"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <img 
+                        className="about__project-card-img" 
+                        src={project.image} 
+                        alt={`${project.title} screenshot`}
+                        onError={(e) => {
+                          const target = e.target as HTMLImageElement;
+                          target.src = '/images/placeholder.jpg';
+                        }}
+                      />
+                      <div className="about__project-card-overlay">
+                        <span>View Live Demo →</span>
+                      </div>
+                    </a>
+                  )}
+                  
+                  {project.githubUrl && (
+                    <a 
+                      href={project.githubUrl} 
+                      className="about__project-card-github"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      View on GitHub →
+                    </a>
+                  )}
+                </div>
+              </motion.article>
+            ))}
+          </motion.div>
+
+          {/* GitHub Link */}
+          <div className="about__project-footer">
+            <a 
+              href="https://github.com/developav" 
+              className="about__project-link-git"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              View More Projects on GitHub →
+            </a>
+          </div>
+        </div>
+      </section>
+    </motion.div>
+  );
 }

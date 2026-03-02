@@ -1,0 +1,10 @@
+<svg id="favicon-16" width="64" height="64" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                        <linearGradient id="gradient3" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" style="stop-color:#667eea;stop-opacity:1"/>
+                            <stop offset="100%" style="stop-color:#764ba2;stop-opacity:1"/>
+                        </linearGradient>
+                    </defs>
+                    <rect width="16" height="16" rx="3" fill="url(#gradient3)"/>
+                    <text x="8" y="11.5" font-family="'Courier New', monospace" font-size="8" font-weight="bold" fill="white" text-anchor="middle">DP</text>
+                </svg>
