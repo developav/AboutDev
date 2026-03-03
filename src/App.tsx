@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
 import { AnimatePresence } from "framer-motion";
 import Header from "./components/header/Header";
 import HeadPage from "./Pages/HeadPage/HeadPage";
@@ -9,7 +9,7 @@ import ContactPage from "./Pages/ContactPage/ContactPage";
 
 function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <Header />
  <AnimatePresence mode="wait">
 <Routes>
@@ -21,7 +21,7 @@ function App() {
       </Routes>
  </AnimatePresence>
       
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
