@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { motion } from "framer-motion";
 import { projects, professionalProjects, type Project } from '../../data/projects';
-import MyImage from './pav2.webp'
+import pav from './pav2.webp'
 import "./AboutMe.scss";
 
 const pageVariants = {
@@ -47,7 +47,7 @@ export default function AboutMe() {
             <div className="about__image-wrapper">
               <img 
                 className="about__block-image" 
-                src={MyImage} 
+                src={pav} 
                 alt="Dmitrii Pavlov - Frontend Developer"
                 aria-label='Photo Dmitrii Pavlov - Frontend Developer'
               />
