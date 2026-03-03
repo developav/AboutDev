@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { motion } from "framer-motion";
 import { projects, professionalProjects, type Project } from '../../data/projects';
-import pav from './pav2.webp'
+import pav from '../../../public/pav2.webp'
 import "./AboutMe.scss";
 
 const pageVariants = {
