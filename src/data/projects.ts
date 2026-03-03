@@ -19,7 +19,7 @@ export const projects: Project[] = [
     fullDescription: 'Modern platform for managing web content and UI components with focus on developer experience. Features include routing, Redux Toolkit state management, responsive design, and API integration with automated GitHub Pages deployment.',
     technologies: ['React', 'Redux Toolkit', 'TypeScript', 'CSS/SCSS', 'Vite', 'REST API'],
     category: 'react',
-    image: '../../public/marusya.png', // You'll need to add this image
+    image: './marusya.png', // You'll need to add this image
     githubUrl: 'https://github.com/developav/platformM',
     liveUrl: 'https://developav.github.io/platformM',
     highlights: [
@@ -37,7 +37,7 @@ export const projects: Project[] = [
     fullDescription: 'Interactive web application for online radio with engaging animations and fully responsive layout. Demonstrates proficiency in vanilla JavaScript and modern CSS techniques with focus on user experience.',
     technologies: ['HTML5', 'CSS3', 'JavaScript', 'BEM', 'GSAP'],
     category: 'javascript',
-    image: '../../public/wawe.png',
+    image: './wawe.png',
     githubUrl: 'https://developav.github.io/wawe',
     liveUrl: 'https://developav.github.io/wawe',
     highlights: [
@@ -55,7 +55,7 @@ export const projects: Project[] = [
     fullDescription: 'Demonstrates advanced animation capabilities using GSAP with scroll-triggered effects and smooth transitions. Built with performance and responsive design in mind, showcasing modern web animation techniques.',
     technologies: ['HTML5', 'CSS3', 'JavaScript', 'GSAP'],
     category: 'javascript',
-    image: '../../public/articul.png',
+    image: './articul.png',
     githubUrl: 'https://github.com/developav/articul',
     liveUrl: 'https://developav.github.io/articul',
     highlights: [
@@ -73,7 +73,7 @@ export const projects: Project[] = [
     fullDescription: 'Professional UI interface for displaying and managing client lists with advanced filtering, sorting, and dynamic data loading capabilities. Demonstrates clean code architecture and user-centric design.',
     technologies: ['HTML5', 'CSS3', 'JavaScript'],
     category: 'javascript',
-    image: '../../public/client.png',
+    image: './client.png',
     githubUrl: 'https://github.com/developav/Clients-List',
     liveUrl: 'https://developav.github.io/Clients-List',
     highlights: [
@@ -95,7 +95,7 @@ export const professionalProjects: Project[] = [
     fullDescription: 'Commercial one-page website for a language school. Built from concept to production with focus on conversion optimization and user engagement.',
     technologies: ['HTML5', 'CSS3', 'JavaScript'],
     category: 'professional',
-    image: '../../public/prosp.png',
+    image: './prosp.png',
     githubUrl: '', // Private/commercial project
     liveUrl: 'https://prospectschool.ru',
     highlights: [
@@ -112,7 +112,7 @@ export const professionalProjects: Project[] = [
     fullDescription: 'Commercial one-page website for a Qualification Assessment Center. Built from concept to production with focus on conversion optimization and user engagement.',
     technologies: ['HTML5', 'CSS3', 'JavaScript','PHP'],
     category: 'professional',
-    image: '../../public/cok.png',
+    image: './cok.png',
     githubUrl: '', // Private/commercial project
     liveUrl: 'https://www.cok-niime.ru/',
     highlights: [
