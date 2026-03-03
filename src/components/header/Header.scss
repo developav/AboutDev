@@ -124,7 +124,7 @@
     right: -120px;
 
     width: 100%;
-    height: 100vh;
+    height: 90vh;
 
     transform: translateX(100%);
     transition: transform 0.5s cubic-bezier(.77, 0, .18, 1);
@@ -132,7 +132,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 120px;
+    padding-top: 75px;
 
     /* 💎 LIQUID GLASS EFFECT */
     background: rgb(228 226 234);
