@@ -46,7 +46,7 @@ export default function AboutMe() {
             <div className="about__image-wrapper">
               <img 
                 className="about__block-image" 
-                src="/pav2.webp" 
+                src="../../../public/pav2.webp" 
                 alt="Dmitrii Pavlov - Frontend Developer"
                 aria-label='Photo Dmitrii Pavlov - Frontend Developer'
               />
