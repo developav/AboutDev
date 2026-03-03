@@ -30,6 +30,22 @@ export const projects: Project[] = [
       'Automated GitHub Pages deployment'
     ]
   },
+   {
+    id: 7,
+    title: 'AboutDev Personal Portfolio — Dmitrii Pavlov Frontend Developer',
+    description: 'Personal Portfolio Website',
+    fullDescription: 'A personal portfolio website built to showcase frontend development skills and projects. Clean, modern design with smooth navigation and a developer-focused presentation of work experience, skills, and featured projects.',
+    technologies: ['React','TypeScript', 'CSS/SCSS', 'Vite', 'CI/CD'],
+    category: 'react',
+    image: './portfolio.png', // You'll need to add this image
+    githubUrl: 'https://github.com/developav/AboutDev',
+    liveUrl: 'https://developav.github.io/AboutDev/#/',
+    highlights: [
+      'Responsive layout optimized for all screen sizes',
+      'Project showcase with live demos and source links',
+      'Deployed via automated GitHub Pages pipeline'
+    ]
+  },
   {
     id: 2,
     title: 'W-Wave',
