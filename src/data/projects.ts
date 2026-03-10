@@ -47,6 +47,24 @@ export const projects: Project[] = [
     ]
   },
   {
+  id: 8,
+  title: 'ShopCalendar — Smart Shopping List & Meal Planner',
+  description: 'Full-stack shopping planner with calendar, recipes, and iOS app',
+  fullDescription: 'ShopCalendar is a full-stack web and iOS application for planning grocery shopping. Users can schedule purchases by date on an interactive calendar, manage an unscheduled shopping list, add recipe ingredients directly to any date, and archive completed lists. Built with React, Redux Toolkit, and a Node.js REST API backed by PostgreSQL, deployed on a VDS with Nginx, PM2, and SSL.',
+  technologies: ['React', 'TypeScript', 'Redux Toolkit', 'CSS Modules', 'Vite', 'Node.js', 'Express', 'PostgreSQL', 'Nginx', 'CI/CD'],
+  category: 'react',
+  image: './shopcalendar.png',
+  githubUrl: 'https://github.com/developav/shopcalendar-web',
+  liveUrl: 'https://jokerfrontdev.ru',
+  highlights: [
+    'Interactive calendar with per-date shopping lists and archive',
+    'Recipe catalog with one-tap ingredient import to any date',
+    'Full-stack deployment: Nginx + PM2 + SSL on VDS',
+    'Companion iOS app built with React Native',
+    'Automated CI/CD via GitHub Actions for both web and API'
+  ]
+},
+  {
     id: 2,
     title: 'W-Wave',
     description: 'Online Radio Web Application',
