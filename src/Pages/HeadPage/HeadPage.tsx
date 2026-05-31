@@ -56,7 +56,7 @@ export default function HeadPage() {
               </div>
               
               <div className="head__block-cv">
-                <a href="../../../public/docx/Dmitrii_Pavlov_CV.docx" className="head__block-cv-download" download="Dmitrii_Pavlov_CV.docx" aria-label="Download my CV">
+                <a href="{`${import.meta.env.BASE_URL}docx/Dmitrii_Pavlov_CV.docx" className="head__block-cv-download" download="Dmitrii_Pavlov_CV.docx" aria-label="Download my CV">
                   Download CV
                   <ArrowDownIcon className="head__block-cv-svg" />
                 </a>
