@@ -117,7 +117,24 @@ export const projects: Project[] = [
       'Clean code architecture',
       'User-centric design'
     ]
-  }
+  },
+  {
+  id: 8,
+  title: 'NFT Marketplace Landing Page',
+  description: 'Responsive NFT Marketplace Landing Page',
+  fullDescription:
+    'A modern responsive landing page for an NFT Marketplace built with semantic HTML, CSS, and JavaScript. The project features adaptive layouts, a mobile burger menu, smooth GSAP animations, and a clean UI inspired by a Figma design.',
+  technologies: ['HTML5', 'CSS3', 'JavaScript', 'GSAP', 'Responsive Design'],
+  category: 'javascript',
+  image: './nft-marketplace.png',
+  githubUrl: 'https://github.com/developav/NFTMarketplace',
+  liveUrl: 'https://developav.github.io/NFTMarketplace/',
+  highlights: [
+    'Fully responsive layout for desktop, tablet, and mobile devices',
+    'Smooth animations powered by GSAP',
+    'Semantic HTML5 with modern CSS Grid and Flexbox layouts'
+  ]
+}
 ];
 
 // Professional/Commercial projects (optional - can be shown separately)
