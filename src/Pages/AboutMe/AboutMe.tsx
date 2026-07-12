@@ -60,10 +60,7 @@ export default function AboutMe() {
               
               <div className="about__descr-content">
                 <p className="about__descr-text">
-                  Frontend developer with 3+ years of experience building responsive, 
-                  user-focused web applications. Currently contributing to financial sector 
-                  projects at Moscow Exchange while seeking opportunities with European 
-                  product companies.
+                  Frontend Developer with 3+ years of commercial experience building responsive, accessible and high-performance web applications. Passionate about React, modern JavaScript, and creating intuitive user interfaces. Currently working at Moscow Exchange and open to international frontend opportunities.
                 </p>
                 
                 <div className="about__highlights">
